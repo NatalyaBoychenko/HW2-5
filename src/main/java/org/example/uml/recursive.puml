@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Main -> RecursiveMethod: findFibonacciNumberRecursive(int n)
+RecursiveMethod --> RecursiveMethod: fibNumber(n - 1)
+RecursiveMethod --> RecursiveMethod: fibNumber(n - 2)
+RecursiveMethod -> Main: fibNumber(n - 1) + fibNumber(n - 2)
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Main -> IterativeMethod: findFibonacciNumberIterative(int n)
+IterativeMethod --> ArrayList: List<Integer> fibNumbers
+ArrayList --> ArrayList:  fibNumbers.add(fibNumbers.get(i - 1) + fibNumbers.get(i - 2))
+ArrayList -> IterativeMethod: fibNumbers.get(n)
+IterativeMethod -> Main: findFibonacciNumberIterative(int n)
+
+@enduml
