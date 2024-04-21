@@ -6,7 +6,7 @@ autonumber
 Main -> DPMethod: findFibonacciNumberIterative(int n)
 DPMethod --> Map: Map<Integer, Integer> savedFibonacci
 Map --> Map:   savedFibonacci.put(n, fibNumbers.get(i - 1) + fibNumbers.get(i - 2))
-Map -> DPMethod: savedFibonacci.get(n)
+Map --> DPMethod: savedFibonacci.get(n)
 DPMethod -> Main: findFibonacciNumberDP(int n)
 
 @enduml
